@@ -1,13 +1,12 @@
 package com.pkj.wow.multitheme;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.pkj.wow.multitheme.util.ThemeUtil;
+import com.pkj.wow.multitheme.util.ThemeFactory;
 
-import static com.pkj.wow.multitheme.util.ThemeUtil.*;
+import static com.pkj.wow.multitheme.util.ThemeFactory.THEME_RED;
 
 
 /**
@@ -21,7 +20,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(ThemeUtil.getThemeId(mTheme));
+        setTheme(ThemeFactory.getThemeId(mTheme));
     }
 
 

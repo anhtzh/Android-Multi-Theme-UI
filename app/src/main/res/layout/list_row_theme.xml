@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.pkj.wow.multitheme.view.ThemeView
+    <com.pkj.wow.multitheme.view.preview.PreviewThemeView
         android:id="@+id/themeView"
         android:layout_width="@dimen/size_56dp"
         android:layout_height="@dimen/size_56dp"

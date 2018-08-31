@@ -7,24 +7,24 @@ import android.view.ViewGroup;
 
 import com.pkj.wow.multitheme.R;
 import com.pkj.wow.multitheme.ScrollingActivity;
-import com.pkj.wow.multitheme.model.Theme;
-import com.pkj.wow.multitheme.view.ThemeView;
+import com.pkj.wow.multitheme.view.preview.PreviewThemeColor;
+import com.pkj.wow.multitheme.view.preview.PreviewThemeView;
 
 import java.util.List;
 
 public class ThemeAdapter extends RecyclerView.Adapter<ThemeAdapter.MyViewHolder> {
  
-    private List<Theme> themeList;
+    private List<PreviewThemeColor> themeList;
     private RecyclerViewClickListener mRecyclerViewClickListener;
  
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public ThemeView themeView;
+        public PreviewThemeView themeView;
         private RecyclerViewClickListener mListener;
  
         public MyViewHolder(View view, RecyclerViewClickListener listener) {
             super(view);
             mListener = listener;
-            themeView = (ThemeView) view.findViewById(R.id.themeView);
+            themeView = (PreviewThemeView) view.findViewById(R.id.themeView);
             view.setOnClickListener(this);
         }
 
@@ -39,7 +39,7 @@ public class ThemeAdapter extends RecyclerView.Adapter<ThemeAdapter.MyViewHolder
     }
  
  
-    public ThemeAdapter(List<Theme> themeList, RecyclerViewClickListener recyclerViewClickListener) {
+    public ThemeAdapter(List<PreviewThemeColor> themeList, RecyclerViewClickListener recyclerViewClickListener) {
         this.themeList = themeList;
         mRecyclerViewClickListener = recyclerViewClickListener;
     }
@@ -54,7 +54,7 @@ public class ThemeAdapter extends RecyclerView.Adapter<ThemeAdapter.MyViewHolder
  
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
-        Theme theme = themeList.get(position);
+        PreviewThemeColor theme = themeList.get(position);
         holder.themeView.setTheme(theme);
 
         if(ScrollingActivity.selectedTheme == position){

@@ -1,4 +1,4 @@
-package com.pkj.wow.multitheme.view;
+package com.pkj.wow.multitheme.view.preview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,14 +11,13 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.pkj.wow.multitheme.R;
-import com.pkj.wow.multitheme.model.Theme;
 
 /**
  * Created by Pankaj on 27-10-2017.
  */
 
-public class ThemeView extends View {
-    private Theme mTheme = new Theme(R.color.primaryColorAmber ,R.color.primaryDarkColorAmber, R.color.secondaryColorAmber);
+public class PreviewThemeView extends View {
+    private PreviewThemeColor mTheme = new PreviewThemeColor(R.color.primaryColorAmber ,R.color.primaryDarkColorAmber, R.color.secondaryColorAmber);
 
     private Paint mBoarderPaint;
     private Paint mPrimaryPaint;
@@ -28,27 +27,27 @@ public class ThemeView extends View {
 
     private float stroke;
 
-    public ThemeView(Context context) {
+    public PreviewThemeView(Context context) {
         super(context);
         init();
     }
 
-    public ThemeView(Context context, @Nullable AttributeSet attrs) {
+    public PreviewThemeView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public ThemeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PreviewThemeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
 
-    public ThemeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public PreviewThemeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
 
-    public void setTheme(Theme theme){
+    public void setTheme(PreviewThemeColor theme){
         this.mTheme = theme;
         init();
         invalidate();

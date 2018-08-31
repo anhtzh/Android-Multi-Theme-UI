@@ -2,8 +2,6 @@ package com.pkj.wow.multitheme;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatDelegate;
@@ -21,10 +19,9 @@ import android.widget.LinearLayout;
 import com.pkj.wow.multitheme.adapter.RecyclerViewClickListener;
 import com.pkj.wow.multitheme.adapter.SectionsPagerAdapter;
 import com.pkj.wow.multitheme.adapter.ThemeAdapter;
-import com.pkj.wow.multitheme.model.Theme;
-import com.pkj.wow.multitheme.util.ThemeUtil;
-import com.pkj.wow.multitheme.view.FabProgressLayout;
-import com.pkj.wow.multitheme.view.ThemeView;
+import com.pkj.wow.multitheme.view.preview.PreviewThemeColor;
+import com.pkj.wow.multitheme.util.ThemeFactory;
+import com.pkj.wow.multitheme.view.preview.PreviewThemeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +30,7 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
     private SectionsPagerAdapter    mSectionsPagerAdapter;
     private ViewPager               mViewPager;
 
-    public static List<Theme> mThemeList = new ArrayList<>();
+    public static List<PreviewThemeColor> mThemeList = new ArrayList<>();
     public static int selectedTheme = 0;
     private RecyclerView mRecyclerView;
     private ThemeAdapter mAdapter;
@@ -45,13 +42,13 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
 
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         initBottomSheet();
 
         prepareThemeData();
 
-        ThemeView themeView = findViewById(R.id.theme_selected);
+        PreviewThemeView themeView = findViewById(R.id.theme_selected);
         themeView.setTheme(mThemeList.get(selectedTheme));
 
         //------------ view pager and tabs
@@ -90,8 +87,12 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
                     public void run() {
                         if(mIsNightMode){
                             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                            //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                         }else{
                             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                            //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                            //AppCompatDelegate appCompatDelegate = AppCompatDelegate.create(ScrollingActivity.this, null);
+                            //appCompatDelegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                         }
                     }
                 },delayTime);
@@ -122,7 +123,7 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
 
     private void prepareThemeData() {
         mThemeList.clear();
-        mThemeList.addAll(ThemeUtil.getThemeList());
+        mThemeList.addAll(ThemeFactory.getThemeList());
         mAdapter.notifyDataSetChanged();
     }
 

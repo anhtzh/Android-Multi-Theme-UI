@@ -1,22 +1,22 @@
-package com.pkj.wow.multitheme.model;
+package com.pkj.wow.multitheme.view.preview;
 
 /**
  * Created by Pankaj on 03-11-2017.
  */
 
-public class Theme {
+public class PreviewThemeColor {
     private int id;
     private int primaryColor;
     private int primaryDarkColor;
     private int accentColor;
 
-    public Theme(int primaryColor, int primaryDarkColor, int accentColor) {
+    public PreviewThemeColor(int primaryColor, int primaryDarkColor, int accentColor) {
         this.primaryColor = primaryColor;
         this.primaryDarkColor = primaryDarkColor;
         this.accentColor = accentColor;
     }
 
-    public Theme(int id ,int primaryColor, int primaryDarkColor, int accentColor) {
+    public PreviewThemeColor(int id , int primaryColor, int primaryDarkColor, int accentColor) {
         this.id = id;
         this.primaryColor = primaryColor;
         this.primaryDarkColor = primaryDarkColor;

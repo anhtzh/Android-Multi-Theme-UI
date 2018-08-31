@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:paddingLeft="8dp"
             android:text="Theme"/>
-        <com.pkj.wow.multitheme.view.SampleThemeView
+        <com.pkj.wow.multitheme.view.preview.PreviewThemeView
             android:id="@+id/theme_selected"
             android:layout_width="40dp"
             android:layout_height="40dp"
