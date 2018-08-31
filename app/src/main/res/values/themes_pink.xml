@@ -1,0 +1,18 @@
+<resources>
+
+
+    <style name="AppTheme.Theme2.Pink" parent="AppTheme.Theme2.Drawable">
+        <item name="colorPrimary">@color/primaryColorPink</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColorPink</item>
+        <item name="colorAccent">@color/secondaryColorPink</item>
+    </style>
+
+    <style name="AppTheme.Theme2.Drawable" parent="AppTheme.Theme2.Color">
+        <item name="drawableCustomIcon">@drawable/ic_dollar_green</item>
+    </style>
+
+    <style name="AppTheme.Theme2.Color" parent="AppTheme.Theme.Default">
+        <item name="colorCustomChartLine">@color/primaryDarkColorPink</item>
+    </style>
+
+</resources>

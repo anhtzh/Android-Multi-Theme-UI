@@ -34,61 +34,16 @@ public class ThemeFactory {
         int themeId = 0;
         switch (theme) {
             case THEME_RED:
-                themeId = R.style.AppTheme_RED;
+                themeId = R.style.AppTheme_Theme1_Red;
                 break;
             case THEME_PINK:
-                themeId = R.style.AppTheme_PINK;
-                break;
-            case THEME_PURPLE:
-                themeId = R.style.AppTheme_PURPLE;
-                break;
-            case THEME_DEEPPURPLE:
-                themeId = R.style.AppTheme_DEEPPURPLE;
-                break;
-            case THEME_INDIGO:
-                themeId = R.style.AppTheme_INDIGO;
-                break;
-            case THEME_BLUE:
-                themeId = R.style.AppTheme_BLUE;
-                break;
-            case THEME_LIGHTBLUE:
-                themeId = R.style.AppTheme_LIGHTBLUE;
-                break;
-            case THEME_CYAN:
-                themeId = R.style.AppTheme_CYAN;
-                break;
-            case THEME_TEAL:
-                themeId = R.style.AppTheme_TEAL;
-                break;
-            case THEME_GREEN:
-                themeId = R.style.AppTheme_GREEN;
-                break;
-            case THEME_LIGHTGREEN:
-                themeId = R.style.AppTheme_LIGHTGREEN;
-                break;
-            case THEME_LIME:
-                themeId = R.style.AppTheme_LIME;
+                themeId = R.style.AppTheme_Theme2_Pink;
                 break;
             case THEME_YELLOW:
-                themeId = R.style.AppTheme_YELLOW;
-                break;
-            case THEME_AMBER:
-                themeId = R.style.AppTheme_AMBER;
-                break;
-            case THEME_ORANGE:
-                themeId = R.style.AppTheme_ORANGE;
-                break;
-            case THEME_DEEPORANGE:
-                themeId = R.style.AppTheme_DEEPORANGE;
-                break;
-            case THEME_BROWN:
-                themeId = R.style.AppTheme_BROWN;
-                break;
-            case THEME_GRAY:
-                themeId = R.style.AppTheme_GRAY;
+                themeId = R.style.AppTheme_Theme3_Yellow_Ext;
                 break;
             case THEME_BLUEGRAY:
-                themeId = R.style.AppTheme_BLUEGRAY;
+                themeId = R.style.AppTheme_Theme4_Gray;
                 break;
             default:
                 break;
@@ -100,22 +55,7 @@ public class ThemeFactory {
         ArrayList<PreviewThemeColor> themeArrayList = new ArrayList<>();
         themeArrayList.add(new PreviewThemeColor(0, R.color.primaryColorRed, R.color.primaryDarkColorRed, R.color.secondaryColorRed));
         themeArrayList.add(new PreviewThemeColor(1, R.color.primaryColorPink, R.color.primaryDarkColorPink, R.color.secondaryColorPink));
-        themeArrayList.add(new PreviewThemeColor(2, R.color.primaryColorPurple, R.color.primaryDarkColorPurple, R.color.secondaryColorPurple));
-        themeArrayList.add(new PreviewThemeColor(3, R.color.primaryColorDeepPurple, R.color.primaryDarkColorDeepPurple, R.color.secondaryColorDeepPurple));
-        themeArrayList.add(new PreviewThemeColor(4, R.color.primaryColorIndigo, R.color.primaryDarkColorIndigo, R.color.secondaryColorIndigo));
-        themeArrayList.add(new PreviewThemeColor(5, R.color.primaryColorBlue, R.color.primaryDarkColorBlue, R.color.secondaryColorBlue));
-        themeArrayList.add(new PreviewThemeColor(6, R.color.primaryColorLightBlue, R.color.primaryDarkColorLightBlue, R.color.secondaryColorLightBlue));
-        themeArrayList.add(new PreviewThemeColor(7, R.color.primaryColorCyan, R.color.primaryDarkColorCyan, R.color.secondaryColorCyan));
-        themeArrayList.add(new PreviewThemeColor(8, R.color.primaryColorTeal, R.color.primaryDarkColorTeal, R.color.secondaryColorTeal));
-        themeArrayList.add(new PreviewThemeColor(9, R.color.primaryColorGreen, R.color.primaryDarkColorGreen, R.color.secondaryColorGreen));
-        themeArrayList.add(new PreviewThemeColor(10, R.color.primaryColorLightGreen, R.color.primaryDarkColorLightGreen, R.color.secondaryColorLightGreen));
-        themeArrayList.add(new PreviewThemeColor(11, R.color.primaryColorLime, R.color.primaryDarkColorLime, R.color.secondaryColorLime));
         themeArrayList.add(new PreviewThemeColor(12, R.color.primaryColorYellow, R.color.primaryDarkColorYellow, R.color.secondaryColorYellow));
-        themeArrayList.add(new PreviewThemeColor(13, R.color.primaryColorAmber, R.color.primaryDarkColorAmber, R.color.secondaryColorAmber));
-        themeArrayList.add(new PreviewThemeColor(14, R.color.primaryColorOrange, R.color.primaryDarkColorOrange, R.color.secondaryColorOrange));
-        themeArrayList.add(new PreviewThemeColor(15, R.color.primaryColorDeepOrange, R.color.primaryDarkColorDeepOrange, R.color.secondaryColorDeepOrange));
-        themeArrayList.add(new PreviewThemeColor(16, R.color.primaryColorBrown, R.color.primaryDarkColorBrown, R.color.secondaryColorBrown));
-        themeArrayList.add(new PreviewThemeColor(17, R.color.primaryColorGray, R.color.primaryDarkColorGray, R.color.secondaryColorGray));
         themeArrayList.add(new PreviewThemeColor(18, R.color.primaryColorBlueGray, R.color.primaryDarkColorBlueGray, R.color.secondaryColorBlueGray));
         return themeArrayList;
     }

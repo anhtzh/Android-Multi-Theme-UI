@@ -1,0 +1,22 @@
+<resources>
+
+    <!--Systems attributes of styles and themes -->
+    <style name="AppTheme.Theme4.Gray" parent="AppTheme.Theme4.Drawable">
+        <item name="colorPrimary">@color/primaryColorBlueGray</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColorBlueGray</item>
+        <item name="colorAccent">@color/secondaryColorBlueGray</item>
+    </style>
+
+    <!--Drawables for theme-->
+    <style name="AppTheme.Theme4.Drawable" parent="AppTheme.Theme4.Color">
+        <item name="drawableCustomIcon">@drawable/ic_dollar_green</item>
+    </style>
+
+    <!--Colors for theme-->
+    <style name="AppTheme.Theme4.Color" parent="AppThemeBase.NoActionBar">
+        <item name="colorCustomChartLine">@color/primaryDarkColorBlueGray</item>
+    </style>
+
+    <style name="AppTheme.Theme.Default" parent="AppTheme.Theme4.Gray" />
+
+</resources>
