@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/primaryColorAmber</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorAmber</item>
         <item name="colorAccent">@color/secondaryColorAmber</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorAmber</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -18,6 +19,7 @@
         <item name="colorPrimary">@color/primaryColorRed</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorRed</item>
         <item name="colorAccent">@color/secondaryColorRed</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorRed</item>
     </style>
 
     <style name="AppTheme.PINK" parent="AppTheme.NoActionBar">
@@ -25,6 +27,7 @@
         <item name="colorPrimary">@color/primaryColorPink</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorPink</item>
         <item name="colorAccent">@color/secondaryColorPink</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorPink</item>
     </style>
 
     <style name="AppTheme.PURPLE" parent="AppTheme.NoActionBar">
@@ -32,6 +35,7 @@
         <item name="colorPrimary">@color/primaryColorPurple</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorPurple</item>
         <item name="colorAccent">@color/secondaryColorPurple</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorPurple</item>
     </style>
 
     <style name="AppTheme.DEEPPURPLE" parent="AppTheme.NoActionBar">
@@ -39,6 +43,7 @@
         <item name="colorPrimary">@color/primaryColorDeepPurple</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorDeepPurple</item>
         <item name="colorAccent">@color/secondaryColorDeepPurple</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorDeepPurple</item>
     </style>
 
     <style name="AppTheme.INDIGO" parent="AppTheme.NoActionBar">
@@ -46,6 +51,7 @@
         <item name="colorPrimary">@color/primaryColorIndigo</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorIndigo</item>
         <item name="colorAccent">@color/secondaryColorIndigo</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorIndigo</item>
     </style>
 
     <style name="AppTheme.BLUE" parent="AppTheme.NoActionBar">
@@ -53,6 +59,7 @@
         <item name="colorPrimary">@color/primaryColorBlue</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorBlue</item>
         <item name="colorAccent">@color/secondaryColorBlue</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorBlue</item>
     </style>
 
     <style name="AppTheme.LIGHTBLUE" parent="AppTheme.NoActionBar">
@@ -60,6 +67,7 @@
         <item name="colorPrimary">@color/primaryColorLightBlue</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorLightBlue</item>
         <item name="colorAccent">@color/secondaryColorLightBlue</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorLightBlue</item>
     </style>
 
     <style name="AppTheme.CYAN" parent="AppTheme.NoActionBar">
@@ -67,6 +75,7 @@
         <item name="colorPrimary">@color/primaryColorCyan</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorCyan</item>
         <item name="colorAccent">@color/secondaryColorCyan</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorCyan</item>
     </style>
 
     <style name="AppTheme.TEAL" parent="AppTheme.NoActionBar">
@@ -74,6 +83,7 @@
         <item name="colorPrimary">@color/primaryColorTeal</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorTeal</item>
         <item name="colorAccent">@color/secondaryColorTeal</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorTeal</item>
     </style>
 
     <style name="AppTheme.GREEN" parent="AppTheme.NoActionBar">
@@ -81,6 +91,7 @@
         <item name="colorPrimary">@color/primaryColorGreen</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorGreen</item>
         <item name="colorAccent">@color/secondaryColorGreen</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorGreen</item>
     </style>
 
     <style name="AppTheme.LIGHTGREEN" parent="AppTheme.NoActionBar">
@@ -88,6 +99,7 @@
         <item name="colorPrimary">@color/primaryColorLightGreen</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorLightGreen</item>
         <item name="colorAccent">@color/secondaryColorLightGreen</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorLightGreen</item>
     </style>
 
     <style name="AppTheme.LIME" parent="AppTheme.NoActionBar">
@@ -95,6 +107,7 @@
         <item name="colorPrimary">@color/primaryColorLime</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorLime</item>
         <item name="colorAccent">@color/secondaryColorLime</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorLime</item>
     </style>
 
     <style name="AppTheme.YELLOW" parent="AppTheme.NoActionBar">
@@ -102,6 +115,7 @@
         <item name="colorPrimary">@color/primaryColorYellow</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorYellow</item>
         <item name="colorAccent">@color/secondaryColorYellow</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorYellow</item>
     </style>
 
     <style name="AppTheme.AMBER" parent="AppTheme.NoActionBar">
@@ -109,6 +123,7 @@
         <item name="colorPrimary">@color/primaryColorAmber</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorAmber</item>
         <item name="colorAccent">@color/secondaryColorAmber</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorAmber</item>
     </style>
 
     <style name="AppTheme.ORANGE" parent="AppTheme.NoActionBar">
@@ -116,6 +131,7 @@
         <item name="colorPrimary">@color/primaryColorOrange</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorOrange</item>
         <item name="colorAccent">@color/secondaryColorOrange</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorOrange</item>
     </style>
 
     <style name="AppTheme.DEEPORANGE" parent="AppTheme.NoActionBar">
@@ -123,6 +139,7 @@
         <item name="colorPrimary">@color/primaryColorDeepOrange</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorDeepOrange</item>
         <item name="colorAccent">@color/secondaryColorDeepOrange</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorDeepOrange</item>
     </style>
 
     <style name="AppTheme.BROWN" parent="AppTheme.NoActionBar">
@@ -130,6 +147,7 @@
         <item name="colorPrimary">@color/primaryColorBrown</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorBrown</item>
         <item name="colorAccent">@color/secondaryColorBrown</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorBrown</item>
     </style>
 
     <style name="AppTheme.GRAY" parent="AppTheme.NoActionBar">
@@ -137,6 +155,7 @@
         <item name="colorPrimary">@color/primaryColorGray</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorGray</item>
         <item name="colorAccent">@color/secondaryColorGray</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorGray</item>
     </style>
 
     <style name="AppTheme.BLUEGRAY" parent="AppTheme.NoActionBar">
@@ -144,6 +163,7 @@
         <item name="colorPrimary">@color/primaryColorBlueGray</item>
         <item name="colorPrimaryDark">@color/primaryDarkColorBlueGray</item>
         <item name="colorAccent">@color/secondaryColorBlueGray</item>
+        <item name="colorCustomChartLine">@color/primaryDarkColorBlueGray</item>
     </style>
 
 

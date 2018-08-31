@@ -21,6 +21,7 @@
         android:padding="4dp"
         android:gravity="center"
         android:orientation="horizontal"
+        android:background="?colorCustomChartLine"
         android:clickable="true"
         android:elevation="4dp">
         <android.support.v7.widget.SwitchCompat
@@ -43,7 +44,7 @@
             android:layout_weight="1"
             android:paddingLeft="8dp"
             android:text="Theme"/>
-        <com.pkj.wow.multitheme.view.ThemeView
+        <com.pkj.wow.multitheme.view.SampleThemeView
             android:id="@+id/theme_selected"
             android:layout_width="40dp"
             android:layout_height="40dp"
