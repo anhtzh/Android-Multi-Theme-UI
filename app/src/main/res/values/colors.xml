@@ -130,14 +130,14 @@
     <color name="secondaryTextColorLime">#000000</color>
 
     <!-- YELLOW PreviewThemeColor -->
-    <color name="primaryColorYellow">#FFEB3B</color>
-    <color name="primaryLightColorYellow">#FFF9C4</color>
-    <color name="primaryDarkColorYellow">#FBC02D</color>
-    <color name="secondaryColorYellow">#536DFE</color>
-    <color name="secondaryLightColorYellow">#8799fd</color>
-    <color name="secondaryDarkColorYellow">#3751e1</color>
-    <color name="primaryTextColorYellow">#ffffff</color>
-    <color name="secondaryTextColorYellow">#000000</color>
+    <!--<color name="primaryColorYellow">#FFEB3B</color>-->
+    <!--<color name="primaryLightColorYellow">#FFF9C4</color>-->
+    <!--<color name="primaryDarkColorYellow">#FBC02D</color>-->
+    <!--<color name="secondaryColorYellow">#536DFE</color>-->
+    <!--<color name="secondaryLightColorYellow">#8799fd</color>-->
+    <!--<color name="secondaryDarkColorYellow">#3751e1</color>-->
+    <!--<color name="primaryTextColorYellow">#ffffff</color>-->
+    <!--<color name="secondaryTextColorYellow">#000000</color>-->
 
     <!-- AMBER PreviewThemeColor -->
     <color name="primaryColorAmber">#FFC107</color>

@@ -2,19 +2,25 @@
 
     <!--Systems attributes of styles and themes -->
     <style name="AppTheme.Theme3.Yellow" parent="AppTheme.Theme3.Drawable">
-        <item name="colorPrimary">@color/primaryColorYellow</item>
-        <item name="colorPrimaryDark">@color/primaryDarkColorYellow</item>
-        <item name="colorAccent">@color/secondaryColorYellow</item>
+        <item name="android:colorPrimary">@color/primaryColorYellow</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColorYellow</item>
+        <item name="android:colorAccent">@color/secondaryColorYellow</item>
+
+        <item name="android:textColorPrimary">@color/secondaryColorYellow</item>
+        <item name="android:textColorSecondary">@color/secondaryColorYellow</item>
+        <item name="android:textColorHint">@color/secondaryColorYellow</item>
+        <item name="android:windowBackground">@color/secondaryColorYellow</item>
+        <item name="android:navigationBarColor">@color/secondaryColorYellow</item>
     </style>
 
     <!--Drawables for theme-->
     <style name="AppTheme.Theme3.Drawable" parent="AppTheme.Theme3.Color">
-        <item name="drawableCustomIcon">@drawable/ic_dollar_orange</item>
+        <item name="drawable.iconDollar">@drawable/ic_dollar_orange</item>
     </style>
 
     <!--Colors for theme-->
     <style name="AppTheme.Theme3.Color" parent="AppTheme.Theme.Default">
-        <item name="colorCustomChartLine">@color/primaryDarkColorYellow</item>
+        <item name="color.chart.typeLine">@color/primaryDarkColorYellow</item>
     </style>
 
     <style name="AppTheme.Theme3.Yellow.Ext"/>

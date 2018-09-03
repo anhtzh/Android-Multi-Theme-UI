@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ThemeSystemColor">
+    </declare-styleable>
+
+    <declare-styleable name="ThemeCustomColor">
+        <attr name="color.chart.typeLine" format="color" />
+        <attr name="color.chart.typeLine2" format="color" />
+        <attr name="color.button.stopLoss" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ThemeCustomDrawable">
+        <attr name="drawable.iconDollar" format="integer" />
+    </declare-styleable>
+
+</resources>

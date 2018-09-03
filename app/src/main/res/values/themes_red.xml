@@ -4,17 +4,23 @@
     <style name="AppTheme.Theme1.Red" parent="AppTheme.Theme1.Drawable">
         <!--<item name="colorPrimary">@color/primaryColorRed</item>-->
         <!--<item name="colorPrimaryDark">@color/primaryDarkColorRed</item>-->
-        <item name="colorAccent">@color/secondaryColorRed</item>
+        <item name="android:colorAccent">@color/secondaryColorRed</item>
+
+        <item name="android:textColorPrimary">@color/secondaryColorRed</item>
+        <item name="android:textColorSecondary">@color/secondaryColorRed</item>
+        <item name="android:textColorHint">@color/secondaryColorRed</item>
+        <item name="android:windowBackground">@color/primaryColorRed</item>
+        <item name="android:navigationBarColor">@color/primaryDarkColorRed</item>
     </style>
 
     <!--Drawables for theme-->
     <style name="AppTheme.Theme1.Drawable" parent="AppTheme.Theme1.Color">
-        <!--<item name="drawableCustomIcon">@drawable/ic_dollar_cyan</item>-->
+        <!--<item name="drawable.iconDollar">@drawable/ic_dollar_cyan</item>-->
     </style>
 
     <!--Colors for theme-->
     <style name="AppTheme.Theme1.Color" parent="AppTheme.Theme.Default">
-        <!--<item name="colorCustomChartLine">@color/primaryDarkColorRed</item>-->
+        <!--<item name="color.chart.typeLine">@color/primaryDarkColorRed</item>-->
     </style>
 
 </resources>

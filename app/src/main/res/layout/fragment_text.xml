@@ -12,10 +12,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
+
         <ImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="?drawableCustomIcon"/>
+            android:src="?attr/drawable.iconDollar" />
+
+        <ImageView
+            android:id="@+id/icon_message"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_avd_message" />
 
         <TextView
             style="@style/Text.Caption"

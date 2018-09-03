@@ -2,19 +2,27 @@
 
     <!--Systems attributes of styles and themes -->
     <style name="AppTheme.Theme4.Gray" parent="AppTheme.Theme4.Drawable">
-        <item name="colorPrimary">@color/primaryColorBlueGray</item>
-        <item name="colorPrimaryDark">@color/primaryDarkColorBlueGray</item>
-        <item name="colorAccent">@color/secondaryColorBlueGray</item>
+        <item name="android:colorPrimary">@color/primaryColorBlueGray</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColorBlueGray</item>
+        <item name="android:colorAccent">@color/secondaryColorBlueGray</item>
+
+        <item name="android:textColorPrimary">@color/secondaryColorBlueGray</item>
+        <item name="android:textColorSecondary">@color/secondaryColorBlueGray</item>
+        <item name="android:textColorHint">@color/secondaryColorBlueGray</item>
+        <item name="android:windowBackground">@color/secondaryColorBlueGray</item>
+        <item name="android:navigationBarColor">@color/primaryColorBlueGray</item>
     </style>
 
     <!--Drawables for theme-->
     <style name="AppTheme.Theme4.Drawable" parent="AppTheme.Theme4.Color">
-        <item name="drawableCustomIcon">@drawable/ic_dollar_green</item>
+        <item name="drawable.iconDollar">@drawable/ic_dollar_cyan</item>
     </style>
 
     <!--Colors for theme-->
     <style name="AppTheme.Theme4.Color" parent="AppThemeBase.NoActionBar">
-        <item name="colorCustomChartLine">@color/primaryDarkColorBlueGray</item>
+        <item name="color.chart.typeLine">@color/primaryDarkColorBlueGray</item>
+        <item name="color.chart.typeLine2">@color/primaryDarkColorBlueGray</item>
+        <item name="color.button.stopLoss">@color/primaryDarkColorBlueGray</item>
     </style>
 
     <style name="AppTheme.Theme.Default" parent="AppTheme.Theme4.Gray" />

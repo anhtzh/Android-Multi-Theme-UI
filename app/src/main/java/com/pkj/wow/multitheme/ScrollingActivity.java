@@ -1,8 +1,11 @@
 package com.pkj.wow.multitheme;
 
+import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.TabLayout;
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -10,25 +13,26 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.pkj.wow.multitheme.adapter.RecyclerViewClickListener;
 import com.pkj.wow.multitheme.adapter.SectionsPagerAdapter;
 import com.pkj.wow.multitheme.adapter.ThemeAdapter;
-import com.pkj.wow.multitheme.view.preview.PreviewThemeColor;
 import com.pkj.wow.multitheme.util.ThemeFactory;
+import com.pkj.wow.multitheme.view.preview.PreviewThemeColor;
 import com.pkj.wow.multitheme.view.preview.PreviewThemeView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScrollingActivity extends BaseActivity implements View.OnClickListener{
-    private SectionsPagerAdapter    mSectionsPagerAdapter;
-    private ViewPager               mViewPager;
+public class ScrollingActivity extends BaseActivity implements View.OnClickListener {
+    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private ViewPager mViewPager;
 
     public static List<PreviewThemeColor> mThemeList = new ArrayList<>();
     public static int selectedTheme = 0;
@@ -62,10 +66,9 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
     }
 
-    private void initBottomSheet(){
+    private void initBottomSheet() {
         // get the bottom sheet view
         LinearLayout llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
 
@@ -78,24 +81,24 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 mIsNightMode = b;
                 int delayTime = 200;
-                if(mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED){
+                if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     delayTime = 400;
                     mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 }
                 compoundButton.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        if(mIsNightMode){
+                        if (mIsNightMode) {
                             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                             //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                        }else{
+                        } else {
                             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                             //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                             //AppCompatDelegate appCompatDelegate = AppCompatDelegate.create(ScrollingActivity.this, null);
                             //appCompatDelegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                         }
                     }
-                },delayTime);
+                }, delayTime);
 
             }
         });
@@ -111,11 +114,11 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
                     public void run() {
                         ScrollingActivity.this.recreate();
                     }
-                },400);
+                }, 400);
             }
         });
 
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(),4);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(), 4);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.setAdapter(mAdapter);
@@ -151,26 +154,26 @@ public class ScrollingActivity extends BaseActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.theme_selected :
+        switch (view.getId()) {
+            case R.id.theme_selected:
             case R.id.fab:
+
                 // change the state of the bottom sheet
-                switch (mBottomSheetBehavior.getState()){
-                    case BottomSheetBehavior.STATE_HIDDEN :
+                switch (mBottomSheetBehavior.getState()) {
+                    case BottomSheetBehavior.STATE_HIDDEN:
                         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                         break;
 
-                    case BottomSheetBehavior.STATE_COLLAPSED :
+                    case BottomSheetBehavior.STATE_COLLAPSED:
                         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                         break;
 
-                    case BottomSheetBehavior.STATE_EXPANDED :
+                    case BottomSheetBehavior.STATE_EXPANDED:
                         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                         break;
                 }
                 break;
         }
     }
-
 
 }

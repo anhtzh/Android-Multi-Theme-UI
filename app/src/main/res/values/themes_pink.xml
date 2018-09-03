@@ -2,17 +2,23 @@
 
 
     <style name="AppTheme.Theme2.Pink" parent="AppTheme.Theme2.Drawable">
-        <item name="colorPrimary">@color/primaryColorPink</item>
-        <item name="colorPrimaryDark">@color/primaryDarkColorPink</item>
-        <item name="colorAccent">@color/secondaryColorPink</item>
+        <item name="android:colorPrimary">@color/primaryColorPink</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColorPink</item>
+        <item name="android:colorAccent">@color/secondaryColorPink</item>
+
+        <item name="android:textColorPrimary">@color/secondaryColorBlueGray</item>
+        <item name="android:textColorSecondary">@color/secondaryColorBlueGray</item>
+        <item name="android:textColorHint">@color/secondaryColorBlueGray</item>
+        <item name="android:windowBackground">@color/secondaryColorBlueGray</item>
+        <item name="android:navigationBarColor">@color/secondaryColorPink</item>
     </style>
 
     <style name="AppTheme.Theme2.Drawable" parent="AppTheme.Theme2.Color">
-        <item name="drawableCustomIcon">@drawable/ic_dollar_green</item>
+        <item name="drawable.iconDollar">@drawable/ic_dollar_green</item>
     </style>
 
     <style name="AppTheme.Theme2.Color" parent="AppTheme.Theme.Default">
-        <item name="colorCustomChartLine">@color/primaryDarkColorPink</item>
+        <item name="color.chart.typeLine">@color/primaryDarkColorPink</item>
     </style>
 
 </resources>

@@ -1,11 +1,15 @@
 package com.pkj.wow.multitheme.ui.fragment;
 
 
+import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.pkj.wow.multitheme.R;
 
@@ -60,7 +64,28 @@ public class TextFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_text, container, false);
+        View view = inflater.inflate(R.layout.fragment_text, container, false);
+        // avd
+        ImageView vMessage = (ImageView) view.findViewById(R.id.icon_message);
+        vMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                animateImageView(v);
+            }
+
+            private void animateImageView(View view) {
+                ImageView fab = (ImageView) view;
+                Drawable d = fab.getDrawable();
+                if (d instanceof AnimatedVectorDrawable) {
+                    AnimatedVectorDrawable avd = (AnimatedVectorDrawable) d;
+                    avd.start();
+                } else if (d instanceof AnimatedVectorDrawableCompat) {
+                    AnimatedVectorDrawableCompat avd = (AnimatedVectorDrawableCompat) d;
+                    avd.start();
+                }
+            }
+        });
+        return view;
     }
 
 }

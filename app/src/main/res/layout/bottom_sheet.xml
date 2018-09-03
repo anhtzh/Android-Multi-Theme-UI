@@ -21,7 +21,7 @@
         android:padding="4dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="?colorCustomChartLine"
+        android:background="?attr/color.chart.typeLine"
         android:clickable="true"
         android:elevation="4dp">
         <android.support.v7.widget.SwitchCompat

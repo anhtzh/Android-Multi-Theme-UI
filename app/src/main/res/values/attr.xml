@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="colorCustomChartLine" format="reference|color" />
-    <attr name="colorCustomChartIndicator" format="reference|color" />
-
-    <attr name="drawableCustomIcon" format="reference|integer" />
-</resources>
